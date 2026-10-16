@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Maa ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #fff4f5, #ffe2e9, #fff0e5);
+  color: #76505c;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+.screen {
+  min-height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 17px;
+  text-align: center;
+}
+
+.screen.active {
+  display: flex;
+  animation: fadeIn 0.8s ease both;
+}
+
+.content {
+  width: 100%;
+  max-width: 440px;
+}
+
+.top-note {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c47b91;
+  margin-bottom: 25px;
+}
+
+.flower {
+  font-size: 75px;
+  display: inline-block;
+  animation: sway 3s ease-in-out infinite;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 8vw, 45px);
+  color: #bd607e;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+button {
+  border: none;
+  background: linear-gradient(135deg, #e990aa, #d96d91);
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 16px 27px;
+  border-radius: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 9px 24px #d96d913d;
+  transition: transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.note {
+  color: #b77b90;
+  font-size: 12px;
+  margin-top: 22px;
+}
+
+.letter {
+  background: #ffffffc9;
+  border: 1px solid #fff;
+  border-radius: 28px;
+  padding: 27px 23px;
+  text-align: left;
+  box-shadow: 0 18px 45px #b65d7914;
+}
+
+.letter p {
+  margin: 12px 0;
+}
+
+.letter .dear {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  color: #bc5d7c;
+}
+
+.signature {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #bd607e;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.final-heart {
+  font-size: 70px;
+  animation: heartbeat 1.4s infinite;
+}
+
+.floating {
+  position: fixed;
+  bottom: -40px;
+  z-index: 5;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  20% { transform: scale(1.12); }
+  40% { transform: scale(1); }
+}
+
+@keyframes floatUp {
+  0% { opacity: 0; transform: translateY(0) rotate(0); }
+  15% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-110vh) rotate(40deg); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- FIRST PAGE -->
+<section class="screen active" id="home">
+  <div class="content">
+    <div class="top-note">A little surprise for someone special</div>
+
+    <div class="flower">🌷</div>
+
+    <h1>Hey Maa! 💗</h1>
+
+    <p>
+      My favourite person,<br>
+      my biggest blessing,<br>
+      my forever safe place.
+    </p>
+
+    <p style="font-size:18px; font-weight:800; color:#a95474;">
+      Maa, will you open a little surprise for me? 🥹
+    </p>
+
+    <button onclick="openLetter()">
+      Maa, click to open 💌
+    </button>
+
+    <div class="note">
+      Made with endless love, just for you ♡
+    </div>
+  </div>
+</section>
+
+<!-- LOVE LETTER -->
+<section class="screen" id="letter">
+  <div class="content">
+    <div class="top-note">For the strongest woman I know</div>
+
+    <div style="font-size:45px;">🌸🧸🌸</div>
+
+    <h1>I love you, Maa!</h1>
+
+    <div class="letter">
+      <p class="dear">My dearest Maa, ❤️</p>
+
+      <p>
+        If there is one person who deserves all the love
+        and happiness in this world, it is YOU.
+      </p>
+
+      <p>
+        Maa, you are so strong. You have faced so much,
+        stood tall through so many situations, and still
+        continued to love and care for everyone around you.
+        I admire you more than words can ever explain.
+      </p>
+
+      <p>
+        You have always been my support, my strength,
+        my comfort, and my safe place. Whenever life feels
+        difficult, the thought of you gives me courage.
+        Just knowing that I have you makes everything
+        feel a little easier.
+      </p>
+
+      <p>
+        Sometimes I may not say it enough, and I may not
+        always express everything that's in my heart,
+        but please never doubt how important you are to me.
+      </p>
+
+      <p>
+        Maa, you don't always have to be the strong one.
+        You deserve to be loved, cared for, pampered,
+        and hugged a thousand times, too. I wish I could
+        take away every worry from your heart and give
+        you all the happiness you have given me.
+      </p>
+
+      <p>
+        No matter how old I grow or where life takes me,
+        I'll always be your child, and you'll always be
+        my home. 🫂
+      </p>
+
+      <p>
+        Thank you for standing by me, believing in me,
+        and loving me in ways I may never fully be able
+        to repay.
+      </p>
+
+      <p style="font-weight:800; color:#b65d7b;">
+        You are not just my Maa. You are one of the
+        biggest blessings of my life.
+      </p>
+
+      <div class="signature">
+        I love you endlessly, Maa. ❤️
+      </div>
+    </div>
+
+    <button onclick="showFinal()">
+      One last hug, Maa 🫂
+    </button>
+
+    <div class="note">Your child, today and always. 💗</div>
+  </div>
+</section>
+
+<!-- FINAL SURPRISE -->
+<section class="screen" id="final">
+  <div class="content">
+    <div class="final-heart">❤️</div>
+
+    <h1>A little reminder, Maa</h1>
+
+    <p style="font-size:18px;">
+      You are strong.<br>
+      You are precious.<br>
+      You are appreciated.<br>
+      You are deeply loved.
+    </p>
+
+    <div class="letter" style="text-align:center;">
+      <div style="font-size:48px;">🫂🌷💗</div>
+
+      <p>
+        If I could choose a mother in every lifetime,
+        in every world, and in every possible story...
+      </p>
+
+      <h2 style="font-family:'Playfair Display',serif;
+                 color:#bd607e; font-size:27px;">
+        I would choose YOU, Maa.
+      </h2>
+
+      <p>
+        Again and again. Every single time.
+      </p>
+
+      <div style="font-size:35px;">💖💖💖</div>
+    </div>
+
+    <button onclick="openLetter()">
+      Read my letter again 💌
+    </button>
+
+    <div class="note">
+      Sending you the biggest hug in the universe. ♡
+    </div>
+  </div>
+</section>
+
+<script>
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(function(screen) {
+    screen.classList.remove('active');
+  });
+
+  document.getElementById(id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function makeHearts(count) {
+  var symbols = ['💗', '💕', '🌸', '💖', '♡'];
+
+  for (var i = 0; i < count; i++) {
+    var item = document.createElement('span');
+
+    item.className = 'floating';
+    item.textContent = symbols[
+      Math.floor(Math.random() * symbols.length)
+    ];
+
+    item.style.left = Math.random() * 100 + 'vw';
+    item.style.fontSize = (17 + Math.random() * 17) + 'px';
+    item.style.animationDuration = (3 + Math.random() * 4) + 's';
+    item.style.animationDelay = (Math.random() * 1.2) + 's';
+
+    document.body.appendChild(item);
+
+    item.addEventListener('animationend', function() {
+      this.remove();
+    });
+  }
+}
+
+function openLetter() {
+  showScreen('letter');
+  makeHearts(25);
+}
+
+function showFinal() {
+  showScreen('final');
+  makeHearts(35);
+}
+</script>
+
+</body>
+</html>
